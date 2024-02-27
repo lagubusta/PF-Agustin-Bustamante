@@ -1,0 +1,838 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* COLORES BASE */
+/* COLORES BASE */
+/* TEXTOS */
+/* TEXTOS */
+/* BORDES */
+/* BORDES */
+/* DECORACIÓN */
+/* DECORACIÓN */
+/* COLORES BASE */
+/* COLORES BASE */
+/* TEXTOS */
+/* TEXTOS */
+/* BORDES */
+/* BORDES */
+/* DECORACIÓN */
+/* DECORACIÓN */
+.header {
+  background-color: #1C0824;
+}
+.header nav div {
+  background-color: #1C0824;
+}
+.header nav div a {
+  color: #F7CB84;
+  font-family: "Buda", serif;
+}
+.header nav div div ul li {
+  text-align: right;
+}
+.header nav div div ul li a {
+  color: #F7CB84;
+  font-family: "Buda", serif;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: #1C0824;
+  }
+  .header nav div {
+    background-color: #1C0824;
+  }
+  .header nav div a {
+    color: #F7CB84;
+    font-family: "Buda", serif;
+  }
+  .header nav div div ul li {
+    text-align: right;
+  }
+  .header nav div div ul li a {
+    color: #F7CB84;
+    font-family: "Buda", serif;
+  }
+}
+/* COLORES BASE */
+/* COLORES BASE */
+/* TEXTOS */
+/* TEXTOS */
+/* BORDES */
+/* BORDES */
+/* DECORACIÓN */
+/* DECORACIÓN */
+body {
+  background-color: #000000;
+  width: 100%;
+  min-width: 320px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #000000;
+    width: 100%;
+  }
+}
+/* COLORES BASE */
+/* COLORES BASE */
+/* TEXTOS */
+/* TEXTOS */
+/* BORDES */
+/* BORDES */
+/* DECORACIÓN */
+/* DECORACIÓN */
+body footer {
+  background-color: #230E2D;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+}
+body footer .ul_footer {
+  background-color: #1C0824;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer .ul_footer .ul_footer_li {
+  width: fit-content;
+  margin: auto;
+}
+body footer .ul_footer .ul_footer_li a img {
+  width: 2rem;
+}
+
+/* COLORES BASE */
+/* COLORES BASE */
+/* TEXTOS */
+/* TEXTOS */
+/* BORDES */
+/* BORDES */
+/* DECORACIÓN */
+/* DECORACIÓN */
+.main-index {
+  width: 100%;
+  margin: auto;
+}
+.main-index .div-foto-1-index {
+  padding: 1rem;
+  background-color: #000000;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-index .div-foto-1-index .foto-1-index {
+  max-width: 100%;
+  max-height: 100%;
+}
+.main-index .section-1 {
+  margin: auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-index .section-1 .div-50-aniver img {
+  width: 100%;
+}
+.main-index .section-1 .texto-50-aniver {
+  background-color: #230E2D;
+}
+.main-index .section-1 .texto-50-aniver .titulo-texto-50-aniver {
+  padding: 1rem;
+  margin: 1rem auto;
+  color: #B0795C;
+  font-family: "Protest Riot", sans-serif;
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: #1C0824;
+  width: 90%;
+}
+.main-index .section-1 .texto-50-aniver .p50ani {
+  padding: 0 10px;
+  color: #F7CB84;
+  font-family: "Buda", serif;
+  font-size: 1.2 em;
+}
+.main-index .imag-index {
+  padding: 1rem 0;
+  margin: 1rem auto;
+  background-color: #B0795C;
+  border-radius: 10px;
+  width: 95%;
+}
+.main-index .imag-index .titulo-imag-index {
+  font-family: "Buda", serif;
+  font-size: 3em;
+  color: #1C0824;
+  padding: 1.5rem 0 0 0;
+  text-align: center;
+}
+.main-index .imag-index .imagenes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-index .imag-index .imagenes img {
+  border: 1px solid #1C0824;
+  border: solid 3px;
+  width: 90%;
+  object-fit: cover;
+  margin: 0.5rem 0;
+  max-width: 768px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-index {
+    width: 95%;
+  }
+  .main-index .div-foto-1-index {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .main-index .section-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  .main-index .section-1 .div-50-aniver {
+    width: 50%;
+  }
+  .main-index .section-1 .texto-50-aniver {
+    width: 50%;
+    background-color: #1C0824;
+  }
+  .main-index .section-1 .texto-50-aniver .titulo-texto-50-aniver {
+    margin-top: 0;
+    width: 100%;
+    color: white;
+    background-color: #230E2D;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .main-index .section-1 .texto-50-aniver .p50ani {
+    margin: auto;
+    color: white;
+    font-size: 1.2em;
+    width: 95%;
+    line-height: 1.2em;
+  }
+  .main-index .imag-index {
+    background-color: rgba(255, 0, 0, 0);
+    width: 100%;
+  }
+  .main-index .imag-index .titulo-imag-index {
+    background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
+    margin: auto;
+    width: 100%;
+  }
+  .main-index .imag-index .imagenes {
+    background-color: white;
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main-index .imag-index .imagenes img {
+    border: 1px solid #1C0824;
+    object-fit: cover;
+    margin: 0.5rem 0.5rem;
+    min-width: 350px;
+    max-width: 350px;
+    height: 200px;
+  }
+}
+/*
+@media screen and (min-width: 768px){
+    }    
+p::-webkit-scrollbar {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 10px;
+    background-color: $salmon;
+}
+p::-webkit-scrollbar-thumb{
+    background-color: $bordo;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+*/
+/* COLORES BASE */
+/* COLORES BASE */
+/* TEXTOS */
+/* TEXTOS */
+/* BORDES */
+/* BORDES */
+/* DECORACIÓN */
+/* DECORACIÓN */
+.main_discos {
+  width: 100%;
+}
+.main_discos .div_cuadrado_discos {
+  background-color: #1C0824;
+  width: 95%;
+  border: 1px solid #F7CB84;
+  margin: 1rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.main_discos .div_cuadrado_discos .main_discos_div {
+  border: 1px solid #F7CB84;
+}
+.main_discos .acor-discos {
+  border: white;
+  width: 95%;
+  margin: 1rem auto;
+}
+.main_discos .acor-discos .accordion {
+  background-color: #F7CB84;
+  margin-top: 2rem;
+}
+.main_discos .acor-discos .accordion .accordion-item h2 {
+  color: #F7CB84;
+  font-family: "Buda", serif;
+}
+.main_discos .acor-discos .accordion .accordion-item h2 button {
+  color: white;
+  background-color: #000000;
+}
+.main_discos .acor-discos .accordion .accordion-item div .accordion-body {
+  background-color: #292929;
+}
+.main_discos .acor-discos .accordion .accordion-item div .accordion-body .main_discos_div {
+  text-align: center;
+}
+.main_discos .acor-discos .accordion .accordion-item div .accordion-body .p-3 {
+  width: 100%;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media screen and (min-width: 768px) {
+  .main_discos {
+    margin: auto;
+    width: 75%;
+    max-width: 1200px;
+  }
+  .main_discos .div_cuadrado_discos {
+    background-color: #1C0824;
+    width: 100%;
+    border: 1px solid #F7CB84;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .main_discos .div_cuadrado_discos .main_discos_div {
+    border: 1px solid #F7CB84;
+  }
+  .main_discos .div_cuadrado_discos .main_discos_div a img {
+    min-width: 150px;
+    max-width: 200px;
+  }
+  .main_discos .acor-discos {
+    border: white;
+    width: 100%;
+    margin: 1rem auto;
+  }
+  .main_discos .acor-discos .accordion {
+    background-color: #F7CB84;
+    margin-top: 2rem;
+  }
+  .main_discos .acor-discos .accordion .accordion-item h2 {
+    color: #F7CB84;
+    font-family: "Buda", serif;
+  }
+  .main_discos .acor-discos .accordion .accordion-item h2 button {
+    color: white;
+    background-color: #1C0824;
+  }
+  .main_discos .acor-discos .accordion .accordion-item div .accordion-body {
+    background-color: #230E2D;
+  }
+  .main_discos .acor-discos .accordion .accordion-item div .accordion-body .main_discos_div {
+    text-align: center;
+  }
+  .main_discos .acor-discos .accordion .accordion-item div .accordion-body .p-3 {
+    width: 100%;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+  }
+}
+/* 
+.main_discos{
+    width: 100%;
+    border: solid red 3px;
+    background-color: $c4;
+    .div_cuadrado_discos{
+
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        .main_discos_div{
+              border: $borde-claro;
+              a{
+              .img_discos{
+                width: 60px;
+              }
+            }
+        }
+    }
+    .acor-discos{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px){
+    .main_discos{
+        background-color: $c4;
+        .div_cuadrado_discos{
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            border-top: $borde-claro;
+            border-bottom: double white 3px;
+            .main_discos_div{
+                  border:$borde-claro;
+                  a{
+                  .img_discos{
+                    width: 150px;
+                  }
+                }
+            }
+        }
+    }
+}
+
+
+*/
+/* COLORES BASE */
+/* COLORES BASE */
+/* TEXTOS */
+/* TEXTOS */
+/* BORDES */
+/* BORDES */
+/* DECORACIÓN */
+/* DECORACIÓN */
+.main_miembros {
+  width: 100%;
+  margin: auto;
+}
+.main_miembros .titu_miembros {
+  width: 80%;
+  margin: 1rem auto;
+  background-color: #F7CB84;
+  font-size: 16px;
+  color: #1C0824;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
+}
+.main_miembros .todas_cards {
+  width: 100%;
+  background-color: #230E2D;
+  padding: 1rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.main_miembros .todas_cards .card {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem auto;
+  background-color: #1C0824;
+}
+.main_miembros .todas_cards .card .card-body {
+  background-color: #230E2D;
+}
+.main_miembros .todas_cards .card .card-body .card-title {
+  color: #F7CB84;
+  font-family: "Buda", serif;
+}
+.main_miembros .todas_cards .card ul li {
+  color: #F7CB84;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #230E2D;
+}
+.main_miembros .segunda {
+  margin: 0.5rem auto;
+  width: 100%;
+  padding: 1rem;
+  background-color: #000000;
+}
+.main_miembros .segunda .titu_segunda {
+  font-family: "Oswald", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .main_miembros {
+    width: 80%;
+    margin: auto;
+  }
+  .main_miembros .titu_miembros {
+    width: fit-content;
+    margin: 1rem 0;
+    background-color: #F7CB84;
+    font-size: 16px;
+    color: #1C0824;
+    font-family: "Courier New", Courier, monospace;
+    text-align: left;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .main_miembros .todas_cards {
+    width: 100%;
+    background-color: #230E2D;
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .main_miembros .todas_cards .card {
+    min-width: 100px;
+    max-width: 300px;
+    padding: 1rem;
+    margin: 0.5rem auto;
+    background-color: #1C0824;
+  }
+  .main_miembros .todas_cards .card img {
+    max-width: 300px;
+    min-width: 150px;
+    height: 300px;
+    background-size: cover;
+  }
+  .main_miembros .todas_cards .card .card-body {
+    background-color: #230E2D;
+  }
+  .main_miembros .todas_cards .card .card-body .card-title {
+    color: #F7CB84;
+    font-family: "Buda", serif;
+  }
+  .main_miembros .todas_cards .card ul li {
+    color: #F7CB84;
+    font-family: "Courier New", Courier, monospace;
+    background-color: #230E2D;
+  }
+  .main_miembros .segunda {
+    margin: 3rem auto;
+    width: 100%;
+    padding: 1rem;
+    background-color: #F7CB84;
+  }
+  .main_miembros .segunda .titu_segunda {
+    font-family: "Oswald", sans-serif;
+  }
+}
+/* 
+.main_discos{
+  background-color: red;
+  width: 95%;
+  margin: auto;
+  background-color: $bg-negro;
+  .div_cuadrado_discos{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    .main_discos_div{
+        border: solid $borde-claro 2px;
+        a{
+        .img_discos{
+          width: 60px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px){
+    .main_discos{
+        background-color: $bg-negro;
+        .div_cuadrado_discos{
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            border-top: $borde-claro;
+            border-bottom: double white 3px;
+            .main_discos_div{
+                  border: solid $borde-claro 2px;
+                  a{
+                  .img_discos{
+                    width: 150px;
+                  }
+                }
+            }
+        }
+    }
+}
+*/
+/* COLORES BASE */
+/* COLORES BASE */
+/* TEXTOS */
+/* TEXTOS */
+/* BORDES */
+/* BORDES */
+/* DECORACIÓN */
+/* DECORACIÓN */
+.main-histo {
+  width: 100%;
+  margin: 1rem auto;
+  background-color: #230E2D;
+}
+.main-histo .container {
+  font-family: "Courier New", Courier, monospace;
+  color: #F7CB84;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 6px 6px;
+  grid-auto-flow: row;
+  grid-template-areas: "article1" "article2" "aside" "fotos";
+}
+.main-histo .container .article1 h1 {
+  color: red;
+}
+.main-histo .container .article1 p {
+  margin: auto;
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  height: 500px;
+  padding: 1rem;
+  grid-area: article1;
+  background-color: #000000;
+  overflow-y: scroll;
+}
+.main-histo .container .article2 {
+  padding: 1rem;
+  grid-area: article2;
+  background-color: #1C0824;
+  color: #B0795C;
+}
+.main-histo .container .aside {
+  overflow: scroll;
+  margin-bottom: 2rem;
+  padding: 10px;
+  grid-area: aside;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.main-histo .container .aside .card {
+  background-color: red;
+}
+.main-histo .container .aside .card .card-body .card-text {
+  color: fuchsia;
+}
+.main-histo .container .aside .card .card-body a {
+  background-color: green;
+}
+.main-histo .container .fotos {
+  background-color: yellow;
+}
+
+/* 
+.main-historia{
+.container {
+    font-family: 'Courier New', Courier, monospace;
+    color: $texto-blanco;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 6px 6px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "article1"
+      "article2"
+      "aside"
+      "fotos";  
+    .article1 {
+        width: 100%;
+        height: 500px;
+        padding: 1rem;
+        grid-area: article1;
+        background-color:$bg-negro;
+        overflow-y: scroll;         
+    }
+    .article2 {
+
+        padding: 1rem;
+        grid-area: article2; 
+        background-color:$bg-negro;
+        color:$c1;
+
+    }
+    .aside {
+        overflow: scroll;
+        margin-bottom: 2rem;
+        padding: 10px;
+        grid-area: aside; 
+        background-color: $bg-negro;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        .card{
+            background-color:$bg-negro;
+            color: $texto-blanco;
+            padding: 1rem;
+            width: fit-content;
+            align-items: center;  
+            justify-content: space-around;
+        }
+    }
+    .fotos {
+        padding: 2rem;
+        grid-area: fotos; 
+        background-color: $bg-negro; 
+        color: black
+    }
+}
+}
+@media screen and (min-width: 768px){
+    .main-historia{
+    .container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    overflow:inherit;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 6px 6px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "article1 article1 article1 article1 aside aside"
+      "article1 article1 article1 article1 aside aside"
+      "article1 article1 article1 article1 aside aside"
+      "article2 article2 article2 article2 aside aside"
+      "fotos fotos fotos fotos fotos fotos";  
+    .article1 {
+        padding: 2rem;
+        color: $texto-negro;
+        background-color: $bg-blanco;
+        grid-area: article1;
+        overflow-y: scroll;         
+    }
+    .article2 {
+        padding: 2rem;
+        grid-area: article2; 
+        background-color: $bg-negro;
+        border: $borde-oscuro;
+        color: white;
+        padding: 10px;
+    }
+    .aside {
+        width: 100%;
+        height: 100%;
+        grid-area: aside;
+        background-color: $bg-negro;
+        .card{
+           width: fit-content;
+           align-items: center
+        }
+    }
+    .fotos {
+        padding: 2rem;
+        grid-area: fotos; 
+        background-color: $bg-blanco;
+        color: $texto-negro;
+    }
+}
+}
+}
+@media screen and (min-width: 1200px){
+    .main-historia{
+    .container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    overflow:inherit;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 6px 6px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "article1 article1 article1 article1 aside aside"
+      "article1 article1 article1 article1 aside aside"
+      "article1 article1 article1 article1 aside aside"
+      "article2 article2 article2 article2 aside aside"
+      "fotos fotos fotos fotos fotos fotos";  
+    .article1 {
+
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 2rem;
+        grid-area: article1;
+        background-color: $bg-negro;
+        color: $texto-blanco;
+        border: $borde-claro;
+        overflow-y: scroll;         
+    }
+    .article2 {
+        padding: 2rem;
+        grid-area: article2; 
+        color: $texto-negro;
+        background-color:$bg-negro;
+        padding: 10px;
+    }
+    .aside {
+        width: 100%;
+        height: 100%;
+        grid-area: aside;
+        background-color: $bg-negro;
+        scrollbar-width: none;
+        .card{
+           width: fit-content;
+           align-items: center
+        }
+    }
+    .fotos {
+        padding: 2rem;
+        grid-area: fotos; 
+        background-color: $bg-negro;
+        color: $texto-blanco;
+        border: $borde-oscuro;
+    }
+}
+}
+}
+/* HISTORIA*/
+
+/*# sourceMappingURL=estilo.css.map */

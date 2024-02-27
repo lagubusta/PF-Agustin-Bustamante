@@ -1,0 +1,170 @@
+@import "var";
+
+
+.main_miembros{
+  width: 100%;
+  margin: auto;
+  .titu_miembros{
+    width: 80%;
+    margin: 1rem auto;
+    background-color: $c1;
+    font-size: 16px;
+    color: $c4;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+  }
+  .todas_cards{
+    width: 100%;
+    background-color: $c3;
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    .card{
+      width: 100%;
+      padding: 1rem;
+      margin: 0.5rem auto;
+      background-color: $c4;
+      img{
+
+      }
+      .card-body{
+        background-color: $c3;
+        .card-title{
+          color: $c1;
+          font-family: $font-f-Buda;
+        } 
+      }
+      ul{
+       li{
+        color: $c1;
+        font-family: $font-f-CNew;
+        background-color: $c3;
+       } 
+      }
+    }
+  }
+  .segunda{
+    margin: 0.5rem auto;
+    width: 100%;
+    padding: 1rem;
+    background-color: $bg-negro;
+    .titu_segunda{
+      font-family: $font-f-osw;
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  .main_miembros{
+    width: 80%;
+    margin: auto;
+    .titu_miembros{
+      width: fit-content;
+      margin: 1rem 0;
+      background-color: $c1;
+      font-size: 16px;
+      color: $c4;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: left;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .todas_cards{
+      width: 100%;
+      background-color: $c3;
+      padding: 1rem;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      .card{
+        min-width: 100px;
+        max-width: 300px;
+        padding: 1rem;
+        margin: 0.5rem auto;
+        background-color: $c4;
+        img{
+          max-width: 300px;
+          min-width: 150px;
+          height: 300px;
+          background-size: cover;
+          
+        }
+        .card-body{
+          background-color: $c3;
+          .card-title{
+            color: $c1;
+            font-family: $font-f-Buda;
+          } 
+        }
+        ul{
+         li{
+          color: $c1;
+          font-family: $font-f-CNew;
+          background-color: $c3;
+         } 
+        }
+      }
+    }
+    .segunda{
+      margin: 3rem auto;
+      width: 100%;
+      padding: 1rem;
+      background-color: $c1;
+      .titu_segunda{
+        font-family: $font-f-osw;
+      }
+    }
+  }
+}
+
+
+/* 
+.main_discos{
+  background-color: red;
+  width: 95%;
+  margin: auto;
+  background-color: $bg-negro;
+  .div_cuadrado_discos{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    .main_discos_div{
+        border: solid $borde-claro 2px;
+        a{
+        .img_discos{
+          width: 60px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px){
+    .main_discos{
+        background-color: $bg-negro;
+        .div_cuadrado_discos{
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            border-top: $borde-claro;
+            border-bottom: double white 3px;
+            .main_discos_div{
+                  border: solid $borde-claro 2px;
+                  a{
+                  .img_discos{
+                    width: 150px;
+                  }
+                }
+            }
+        }
+    }
+}
+*/

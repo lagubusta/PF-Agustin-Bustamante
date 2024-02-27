@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@import "var";
+@import "header";
+@import "body";
+@import "footer";
+@import "index";
+@import "discos";
+@import "miembros";
+@import "historia";

@@ -1,0 +1,64 @@
+@import "var";
+
+.header{
+    background-color: $c4;
+    nav{
+        
+        div{
+            background-color: $c4;
+            a{
+                color: $c1;
+                font-family: $font-f-Buda;
+            }
+            button{
+                
+                span{
+                }
+            }
+            div{
+                ul{
+                    li{
+                        text-align: right;
+                        a{
+                            color: $c1;
+                            font-family: $font-f-Buda;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header{
+        background-color: $c4;
+        
+        nav{
+            
+            div{
+                background-color: $c4;
+                a{
+                    color: $c1;
+                    font-family: $font-f-Buda;
+                }
+                button{
+                    
+                    span{
+                    }
+                }
+                div{
+                    ul{
+                        li{
+                            text-align: right;
+                            a{
+                                color: $c1;
+                                font-family: $font-f-Buda;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
