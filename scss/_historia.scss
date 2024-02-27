@@ -2,7 +2,7 @@
 
 .main-histo{
     width: 100%;
-    margin: 1rem auto;
+    margin: 1rem auto 0 auto ;
     background-color: $c3;
     .container{
         font-family: 'Courier New', Courier, monospace;
@@ -22,17 +22,19 @@
         "fotos";  
         .article1{
             h1{
-                color: red;
+                padding-top: 2rem;
+                color: $c2
             }
             p{
                 margin: auto;
-                font-family: $font-f-osw;
+                font-family: $font-f-Buda;
                 width: 100%;
                 height: 500px;
                 padding: 1rem;
                 grid-area: article1;
                 background-color:$bg-negro;
                 overflow-y: scroll; 
+                color: $c1;
             }
         }
         .article2{
@@ -52,142 +54,115 @@
             flex-wrap: wrap;
             gap: 0.5rem;
             .card{
-                background-color: red;
-                img{
+                background-color: $c4;
+                a{
+                    img{
 
+                    }
                 }
                 .card-body{
                     .card-title{
+                        font-family: $font-f-Buda;
+                        color: $c2
 
                     }
                     .card-text{
-                        color: fuchsia;
+                        color: $c2;
                     }
                     a{
-                        background-color: green;
+                        background-color: $c2;
+                        border: $borde-claro;
+                        color: $c4;
                     }
                 }
             }
         }
         .fotos{
-            background-color: yellow;
+            background-color: $bg-negro;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            .fotos_abajo{
+                width: 100%;
+                img{
+                    margin: auto;
+                    width: 100%;
+                    
+                    padding: 0.5rem;
+                }
+            }
         }
     }
     
 }
+@media screen and (min-width: 768px){
+    .container{
+        width: 90%;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "article1 article1 article1 article1"
+          "article2 article2 article2 article2"
+          "aside aside aside aside"
+          "fotos fotos fotos fotos"; 
+        .article1{
+            width: 100%;
+            color: $texto-negro;
+            background-color: $c2;
+            grid-area: article1;
+            h1{
+                color: green;
+            }
+            p{
+                color: yellow;
+                overflow-y: scroll;
+            }
+        }
+        .article2 {
+            grid-area: article2; 
+            background-color: $bg-negro;
+            border: $borde-oscuro;
+            color: white;
+            h1{
+                color: red;
+            }
+            p{
+                color: yellow;
+            }
+        }
+        .aside {
+            width: 100%;
+            height: 100%;
+            grid-area: aside;
+            background-color: $bg-negro;
+            display: flex;
+            flex-direction: row;
+
+            .card{
+               width: 49%;
+               max-width: 400px;
+               align-items: center;
+               a{
+                img{
+                }
+               }
+            }
+        }
+        .fotos {
+            padding: 2rem;
+            grid-area: fotos; 
+            background-color: $bg-blanco;
+            color: $texto-negro;
+        }
+    }
+}
 
 
 /* 
-.main-historia{
-.container {
-    font-family: 'Courier New', Courier, monospace;
-    color: $texto-blanco;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 6px 6px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "article1"
-      "article2"
-      "aside"
-      "fotos";  
-    .article1 {
-        width: 100%;
-        height: 500px;
-        padding: 1rem;
-        grid-area: article1;
-        background-color:$bg-negro;
-        overflow-y: scroll;         
-    }
-    .article2 {
-        
-        padding: 1rem;
-        grid-area: article2; 
-        background-color:$bg-negro;
-        color:$c1;
-        
-    }
-    .aside {
-        overflow: scroll;
-        margin-bottom: 2rem;
-        padding: 10px;
-        grid-area: aside; 
-        background-color: $bg-negro;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        .card{
-            background-color:$bg-negro;
-            color: $texto-blanco;
-            padding: 1rem;
-            width: fit-content;
-            align-items: center;  
-            justify-content: space-around;
-        }
-    }
-    .fotos {
-        padding: 2rem;
-        grid-area: fotos; 
-        background-color: $bg-negro; 
-        color: black
-    }
-}
-}
-@media screen and (min-width: 768px){
-    .main-historia{
-    .container {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    overflow:inherit;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 6px 6px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "article1 article1 article1 article1 aside aside"
-      "article1 article1 article1 article1 aside aside"
-      "article1 article1 article1 article1 aside aside"
-      "article2 article2 article2 article2 aside aside"
-      "fotos fotos fotos fotos fotos fotos";  
-    .article1 {
-        padding: 2rem;
-        color: $texto-negro;
-        background-color: $bg-blanco;
-        grid-area: article1;
-        overflow-y: scroll;         
-    }
-    .article2 {
-        padding: 2rem;
-        grid-area: article2; 
-        background-color: $bg-negro;
-        border: $borde-oscuro;
-        color: white;
-        padding: 10px;
-    }
-    .aside {
-        width: 100%;
-        height: 100%;
-        grid-area: aside;
-        background-color: $bg-negro;
-        .card{
-           width: fit-content;
-           align-items: center
-        }
-    }
-    .fotos {
-        padding: 2rem;
-        grid-area: fotos; 
-        background-color: $bg-blanco;
-        color: $texto-negro;
-    }
-}
-}
-}
+
+    
 @media screen and (min-width: 1200px){
     .main-historia{
     .container {
