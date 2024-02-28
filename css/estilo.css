@@ -799,5 +799,90 @@ p::-webkit-scrollbar-thumb{
 }
 }
 /* HISTORIA*/
+/* COLORES BASE */
+/* COLORES BASE */
+/* TEXTOS */
+/* TEXTOS */
+/* BORDES */
+/* BORDES */
+/* DECORACIÓN */
+/* DECORACIÓN */
+.main_contacto {
+  margin: 1rem;
+  background-color: #1C0824;
+  display: flexbox;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_contacto .form_contacto {
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+.main_contacto .form_contacto .mb-3 label {
+  font-family: "Buda", serif;
+  color: #B0795C;
+}
+.main_contacto .form_contacto .mb-3 input {
+  font-family: "Buda", serif;
+  background-color: #000000;
+  color: #B0795C;
+  border: #B0795C solid 1px;
+}
+.main_contacto .form_contacto button {
+  background-color: #B0795C;
+}
+.main_contacto .divv_ifr {
+  text-align: center;
+  padding: 1rem;
+}
+.main_contacto .divv_ifr h5 {
+  font-family: "Buda", serif;
+  text-align: center;
+  color: #B0795C;
+}
+.main_contacto .divv_ifr iframe {
+  width: 100%;
+  padding-top: 20px;
+  height: 350px;
+}
+
+@media screen and (min-width: 768px) {
+  .main_contacto {
+    background-color: #230E2D;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_contacto .form_contacto {
+    width: 50%;
+    background-color: #1C0824;
+  }
+  .main_contacto .form_contacto .mb-3 label {
+    color: #B0795C;
+  }
+  .main_contacto .form_contacto .mb-3 input {
+    background-color: #230E2D;
+  }
+  .main_contacto .divv_ifr {
+    width: 49%;
+    height: 100%;
+  }
+  .main_contacto .divv_ifr h5 {
+    color: #B0795C;
+    background-color: #1C0824;
+    padding: 15px;
+    margin: 3px 15%;
+  }
+  .main_contacto .divv_ifr iframe {
+    width: 100%;
+    height: 400px;
+  }
+}
 
 /*# sourceMappingURL=estilo.css.map */
