@@ -88,14 +88,14 @@ body {
 /* BORDES */
 /* DECORACIÓN */
 /* DECORACIÓN */
-body footer {
+footer {
   background-color: #230E2D;
   width: 100%;
   height: 4rem;
   display: flex;
   justify-content: center;
 }
-body footer .ul_footer {
+footer .ul_footer {
   background-color: #1C0824;
   width: 100%;
   margin: auto;
@@ -104,12 +104,13 @@ body footer .ul_footer {
   justify-content: space-between;
   align-items: center;
 }
-body footer .ul_footer .ul_footer_li {
+footer .ul_footer .ul_footer_li {
   width: fit-content;
   margin: auto;
 }
-body footer .ul_footer .ul_footer_li a img {
+footer .ul_footer .ul_footer_li a img {
   width: 2rem;
+  filter: brightness(0) invert(1) sepia(1) hue-rotate(180deg);
 }
 
 /* COLORES BASE */
@@ -372,6 +373,10 @@ p::-webkit-scrollbar-thumb{
     color: white;
     background-color: #1C0824;
   }
+  .main_discos .acor-discos .accordion .accordion-item h2 button:hover {
+    background-color: #B0795C;
+    color: #1C0824;
+  }
   .main_discos .acor-discos .accordion .accordion-item div .accordion-body {
     background-color: #230E2D;
   }
@@ -525,6 +530,9 @@ p::-webkit-scrollbar-thumb{
     margin: 0.5rem auto;
     background-color: #1C0824;
   }
+  .main_miembros .todas_cards .card:hover {
+    background-color: #F7CB84;
+  }
   .main_miembros .todas_cards .card img {
     max-width: 300px;
     min-width: 150px;
@@ -553,51 +561,6 @@ p::-webkit-scrollbar-thumb{
     font-family: "Oswald", sans-serif;
   }
 }
-/* 
-.main_discos{
-  background-color: red;
-  width: 95%;
-  margin: auto;
-  background-color: $bg-negro;
-  .div_cuadrado_discos{
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    .main_discos_div{
-        border: solid $borde-claro 2px;
-        a{
-        .img_discos{
-          width: 60px;
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 768px){
-    .main_discos{
-        background-color: $bg-negro;
-        .div_cuadrado_discos{
-            padding: 1rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-            border-top: $borde-claro;
-            border-bottom: double white 3px;
-            .main_discos_div{
-                  border: solid $borde-claro 2px;
-                  a{
-                  .img_discos{
-                    width: 150px;
-                  }
-                }
-            }
-        }
-    }
-}
-*/
 /* COLORES BASE */
 /* COLORES BASE */
 /* TEXTOS */
@@ -869,6 +832,13 @@ p::-webkit-scrollbar-thumb{
   .main_contacto .form_contacto .mb-3 input {
     background-color: #230E2D;
   }
+  .main_contacto .form_contacto .mb-3 input:hover {
+    background-color: rgba(35, 14, 45, 0.5);
+  }
+  .main_contacto .form_contacto .mb-3 input:focus {
+    color: #1C0824;
+    background-color: #B0795C;
+  }
   .main_contacto .divv_ifr {
     width: 49%;
     height: 100%;
@@ -883,6 +853,41 @@ p::-webkit-scrollbar-thumb{
     width: 100%;
     height: 400px;
   }
+}
+.form_contacto-1 {
+  background-color: red;
+}
+
+.form_contacto-2 {
+  background-color: red;
+}
+
+.form_contacto-3 {
+  background-color: red;
+}
+
+.form_contacto-4 {
+  background-color: red;
+}
+
+.form_contacto-5 {
+  background-color: red;
+}
+
+.form_contacto-6 {
+  background-color: red;
+}
+
+.form_contacto-7 {
+  background-color: red;
+}
+
+.form_contacto-8 {
+  background-color: red;
+}
+
+.form_contacto-9 {
+  background-color: red;
 }
 
 /*# sourceMappingURL=estilo.css.map */

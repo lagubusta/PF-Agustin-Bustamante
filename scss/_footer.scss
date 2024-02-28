@@ -1,27 +1,27 @@
 @import "var";
 
-body{
-    footer{
-        background-color: $c3;
+
+footer{
+    background-color: $c3;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    .ul_footer{
+        background-color: $c4;
         width: 100%;
-        height: 4rem;
+        margin: auto;
+        padding: 1rem 0;
         display: flex;
-        justify-content: center;
-        .ul_footer{
-            background-color: $c4;
-            width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        .ul_footer_li{
+            width: fit-content;
             margin: auto;
-            padding: 1rem 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .ul_footer_li{
-                width: fit-content;
-                margin: auto;
-                a{
-                    img{
-                        width: 2rem;
-                    }
+            a{
+                img{
+                    width: 2rem;
+                    filter: brightness(0) invert(1) sepia(1) hue-rotate(180deg);
                 }
             }
         }
