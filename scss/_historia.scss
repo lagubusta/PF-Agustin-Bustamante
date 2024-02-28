@@ -103,17 +103,18 @@
         grid-template-rows: 1fr 1fr 1fr 1fr; 
         gap: 0px 0px; 
         grid-template-areas: 
-          "article1 article1 article1 article1"
-          "article2 article2 article2 article2"
+          "article1 article1 article1 aside"
+          "article2 article2 article2 aside"
           "aside aside aside aside"
           "fotos fotos fotos fotos"; 
         .article1{
             width: 100%;
             color: $texto-negro;
-            background-color: $c2;
+            background-color: $c4;
             grid-area: article1;
             h1{
-                color: green;
+                background-color: $c3;
+                
             }
             p{
                 color: yellow;
@@ -126,10 +127,10 @@
             border: $borde-oscuro;
             color: white;
             h1{
-                color: red;
+                color: $c2;
             }
             p{
-                color: yellow;
+                color: $texto-blanco;
             }
         }
         .aside {
@@ -146,11 +147,15 @@
                align-items: center;
                a{
                 img{
+                    
                 }
                }
             }
         }
         .fotos {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
             padding: 2rem;
             grid-area: fotos; 
             background-color: $bg-blanco;

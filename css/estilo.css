@@ -656,16 +656,16 @@ p::-webkit-scrollbar-thumb{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
-    grid-template-areas: "article1 article1 article1 article1" "article2 article2 article2 article2" "aside aside aside aside" "fotos fotos fotos fotos";
+    grid-template-areas: "article1 article1 article1 aside" "article2 article2 article2 aside" "aside aside aside aside" "fotos fotos fotos fotos";
   }
   .container .article1 {
     width: 100%;
     color: #000000;
-    background-color: #B0795C;
+    background-color: #1C0824;
     grid-area: article1;
   }
   .container .article1 h1 {
-    color: green;
+    background-color: #230E2D;
   }
   .container .article1 p {
     color: yellow;
@@ -678,10 +678,10 @@ p::-webkit-scrollbar-thumb{
     color: white;
   }
   .container .article2 h1 {
-    color: red;
+    color: #B0795C;
   }
   .container .article2 p {
-    color: yellow;
+    color: white;
   }
   .container .aside {
     width: 100%;
@@ -697,6 +697,9 @@ p::-webkit-scrollbar-thumb{
     align-items: center;
   }
   .container .fotos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     padding: 2rem;
     grid-area: fotos;
     background-color: white;
