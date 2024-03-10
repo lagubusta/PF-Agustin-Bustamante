@@ -52,13 +52,30 @@
     padding: 1rem;
     background-color: $bg-negro;
     .titu_segunda{
+      width: 100%;
       font-family: $font-f-osw;
+      color: $c3;
+      text-align: center;
+    }
+    .art_artista{
+      width: 100%;
+      background-color: $c4;
+      padding: 3px;
+      .nomb_artista{
+        color: $c1;
+      }
+      p{
+        color: $c1;
+        font-family: $font-f-CNew;
+      }
     }
   }
+  
 }
 
 
 @media screen and (min-width: 768px){
+  
   .main_miembros{
     width: 80%;
     margin: auto;
@@ -121,6 +138,21 @@
       .titu_segunda{
         font-family: $font-f-osw;
       }
+    }
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 5px 10px;
+      background-color: $c2;
+      color: $c4;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 999;
+      &:hover{
+          background-color: $c4;
+          color: $c1;
+          }
     }
   }
 }

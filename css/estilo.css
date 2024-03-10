@@ -331,6 +331,21 @@ p::-webkit-scrollbar-thumb{
   color: white;
   font-family: "Courier New", Courier, monospace;
 }
+.main_discos .floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  background-color: #B0795C;
+  color: #1C0824;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+}
+.main_discos .floating-btn:hover {
+  background-color: #1C0824;
+  color: #F7CB84;
+}
 
 @media screen and (min-width: 768px) {
   .main_discos {
@@ -383,10 +398,28 @@ p::-webkit-scrollbar-thumb{
   .main_discos .acor-discos .accordion .accordion-item div .accordion-body .main_discos_div {
     text-align: center;
   }
+  .main_discos .acor-discos .accordion .accordion-item div .accordion-body .main_discos_div .img_discos {
+    width: 200px;
+  }
   .main_discos .acor-discos .accordion .accordion-item div .accordion-body .p-3 {
     width: 100%;
     color: white;
     font-family: "Courier New", Courier, monospace;
+  }
+  .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: #B0795C;
+    color: #1C0824;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .floating-btn:hover {
+    background-color: #1C0824;
+    color: #F7CB84;
   }
 }
 /* 
@@ -495,7 +528,22 @@ p::-webkit-scrollbar-thumb{
   background-color: #000000;
 }
 .main_miembros .segunda .titu_segunda {
+  width: 100%;
   font-family: "Oswald", sans-serif;
+  color: #230E2D;
+  text-align: center;
+}
+.main_miembros .segunda .art_artista {
+  width: 100%;
+  background-color: #1C0824;
+  padding: 3px;
+}
+.main_miembros .segunda .art_artista .nomb_artista {
+  color: #F7CB84;
+}
+.main_miembros .segunda .art_artista p {
+  color: #F7CB84;
+  font-family: "Courier New", Courier, monospace;
 }
 
 @media screen and (min-width: 768px) {
@@ -559,6 +607,21 @@ p::-webkit-scrollbar-thumb{
   }
   .main_miembros .segunda .titu_segunda {
     font-family: "Oswald", sans-serif;
+  }
+  .main_miembros .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: #B0795C;
+    color: #1C0824;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .main_miembros .floating-btn:hover {
+    background-color: #1C0824;
+    color: #F7CB84;
   }
 }
 /* COLORES BASE */
@@ -648,6 +711,21 @@ p::-webkit-scrollbar-thumb{
   width: 100%;
   padding: 0.5rem;
 }
+.main-histo .floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  background-color: #B0795C;
+  color: #1C0824;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+}
+.main-histo .floating-btn:hover {
+  background-color: #1C0824;
+  color: #F7CB84;
+}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -704,6 +782,21 @@ p::-webkit-scrollbar-thumb{
     grid-area: fotos;
     background-color: white;
     color: #000000;
+  }
+  .container .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: #B0795C;
+    color: #1C0824;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .container .floating-btn:hover {
+    background-color: #1C0824;
+    color: #F7CB84;
   }
 }
 /* 
@@ -783,6 +876,13 @@ p::-webkit-scrollbar-thumb{
   justify-content: space-between;
   align-items: center;
 }
+.main_contacto h1 {
+  width: 100%;
+  color: #B0795C;
+  text-align: center;
+  padding: 1rem;
+  font-family: "Buda", serif;
+}
 .main_contacto .form_contacto {
   width: 100%;
   margin: auto;
@@ -791,6 +891,7 @@ p::-webkit-scrollbar-thumb{
 .main_contacto .form_contacto .mb-3 label {
   font-family: "Buda", serif;
   color: #B0795C;
+  font-size: x-large;
 }
 .main_contacto .form_contacto .mb-3 input {
   font-family: "Buda", serif;
@@ -805,7 +906,8 @@ p::-webkit-scrollbar-thumb{
   text-align: center;
   padding: 1rem;
 }
-.main_contacto .divv_ifr h5 {
+.main_contacto .divv_ifr h2 {
+  font-size: 18px;
   font-family: "Buda", serif;
   text-align: center;
   color: #B0795C;
@@ -818,6 +920,7 @@ p::-webkit-scrollbar-thumb{
 
 @media screen and (min-width: 768px) {
   .main_contacto {
+    min-height: 84vh;
     background-color: #230E2D;
     display: flex;
     flex-direction: row;
@@ -825,12 +928,20 @@ p::-webkit-scrollbar-thumb{
     justify-content: center;
     align-items: center;
   }
+  .main_contacto h1 {
+    width: 100%;
+    color: #B0795C;
+    text-align: center;
+    padding: 1rem;
+    font-family: "Buda", serif;
+  }
   .main_contacto .form_contacto {
     width: 50%;
     background-color: #1C0824;
   }
   .main_contacto .form_contacto .mb-3 label {
     color: #B0795C;
+    font-size: x-large;
   }
   .main_contacto .form_contacto .mb-3 input {
     background-color: #230E2D;
@@ -846,7 +957,8 @@ p::-webkit-scrollbar-thumb{
     width: 49%;
     height: 100%;
   }
-  .main_contacto .divv_ifr h5 {
+  .main_contacto .divv_ifr h2 {
+    font-size: 25px;
     color: #B0795C;
     background-color: #1C0824;
     padding: 15px;

@@ -1,6 +1,7 @@
 @import "var";
 
 .main-histo{
+
     width: 100%;
     margin: 1rem auto 0 auto ;
     background-color: $c3;
@@ -93,7 +94,21 @@
             }
         }
     }
-    
+    .floating-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 5px 10px;
+        background-color: $c2;
+        color: $c4;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 999;
+        &:hover{
+            background-color: $c4;
+            color: $c1;
+             }
+        }
 }
 @media screen and (min-width: 768px){
     .container{
@@ -160,6 +175,21 @@
             grid-area: fotos; 
             background-color: $bg-blanco;
             color: $texto-negro;
+        }
+        .floating-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 5px 10px;
+            background-color: $c2;
+            color: $c4;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 999;
+            &:hover{
+                background-color: $c4;
+                color: $c1;
+                }
         }
     }
 }

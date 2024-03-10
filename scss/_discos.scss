@@ -60,6 +60,21 @@
             }
         }
     }
+    .floating-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 5px 10px;
+        background-color: $c2;
+        color: $c4;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 999;
+        &:hover{
+            background-color: $c4;
+            color: $c1;
+             }
+        }
 }
 
 @media screen and (min-width: 768px){
@@ -117,6 +132,7 @@
                             .main_discos_div{
                                 text-align: center;
                                 .img_discos{
+                                    width: 200px;
                                 }
                             }
                             .p-3{
@@ -129,6 +145,21 @@
                 }
             }
         }
+    }
+    .floating-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 5px 10px;
+        background-color: $c2;
+        color: $c4;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 999;
+        &:hover{
+            background-color: $c4;
+            color: $c1;
+            }
     }
 }
 /* 
