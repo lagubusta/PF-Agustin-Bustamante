@@ -33,11 +33,12 @@
                 padding: 1rem;
                 margin: 1rem auto;
                 color: $c2;
-                font-family: $font-f-Pr;
+                font-family: $font-f-CNew;
                 text-align: center;
                 padding: 0.5rem 0;
                 background-color: $c4;
                 width: 90%;
+                
             }
             .p50ani{
                 padding: 0 10px;
@@ -50,19 +51,15 @@
     .imag-index{
         padding: 1rem 0;
         margin: 1rem auto;
-        background-color: $c2;
+        background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
         border-radius: 10px;
         width: 95%;
-        
-        
         .titulo-imag-index{
-            font-family: $font-f-Buda;
-            font-size: 3em;
-            color: $c4;
-            padding: 1.5rem 0 0 0;
+            font-family: $font-f-CNew;
+            font-size: 2em;
+            color: $c2;
+            padding: 1rem 0 0 0;
             text-align: center;
-            
-            
         }
         .imagenes{
             display: flex;
@@ -104,7 +101,7 @@
                 .titulo-texto-50-aniver{
                     margin-top: 0;
                     width: 100%;
-                    color: $texto-blanco;
+                    color: $c2;
                     background-color: $c3;
                     font-family: $font-f-CNew;
                 }
@@ -125,11 +122,13 @@
                 background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
                 margin: auto;
                 width: 100%;
+                font-family:$font-f-CNew ;
+                color: $c2;
             }
             .imagenes{
-                background-color: $bg-blanco;
+                background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
                 margin: auto;
-                width: fit-content;
+                width: 100%;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;

@@ -6,10 +6,10 @@
   margin: auto;
   .titu_miembros{
     width: 80%;
-    margin: 1rem auto;
-    background-color: $c1;
+    margin: 1rem auto 0 auto;
+    background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
     font-size: 16px;
-    color: $c4;
+    color: $c2;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     justify-content: center;
@@ -47,30 +47,46 @@
     }
   }
   .segunda{
-    margin: 0.5rem auto;
+    margin:auto;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 0.5rem;
     background-color: $bg-negro;
     .titu_segunda{
       width: 100%;
-      font-family: $font-f-osw;
-      color: $c3;
+      font-family: $font-f-CNew;
+      color: $c2;
       text-align: center;
+      background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
     }
     .art_artista{
       width: 100%;
       background-color: $c4;
-      padding: 3px;
+      padding: 15px;      
       .nomb_artista{
-        color: $c1;
-      }
-      p{
         color: $c1;
         font-family: $font-f-CNew;
       }
+      p{
+        color: $c1;
+        font-family: $font-f-Buda;
+      }
     }
   }
-  
+  .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: $c2;
+    color: $c4;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+    &:hover{
+        background-color: $c4;
+        color: $c1;
+        }
+  }
 }
 
 

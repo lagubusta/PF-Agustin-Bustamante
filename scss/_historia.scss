@@ -1,7 +1,6 @@
 @import "var";
 
 .main-histo{
-
     width: 100%;
     margin: 1rem auto 0 auto ;
     background-color: $c3;
@@ -112,18 +111,16 @@
 }
 @media screen and (min-width: 768px){
     .container{
-        width: 90%;
+        width: 60%;
         display: grid; 
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-template-columns: 3fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
         gap: 0px 0px; 
         grid-template-areas: 
           "article1 article1 article1 aside"
           "article2 article2 article2 aside"
-          "aside aside aside aside"
           "fotos fotos fotos fotos"; 
         .article1{
-            width: 100%;
             color: $texto-negro;
             background-color: $c4;
             grid-area: article1;
@@ -148,8 +145,8 @@
                 color: $texto-blanco;
             }
         }
-        .aside {
-            width: 100%;
+        .aside{
+            
             height: 100%;
             grid-area: aside;
             background-color: $bg-negro;
