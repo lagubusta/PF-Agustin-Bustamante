@@ -1,98 +1,7 @@
 @import "var";
 
+
 .main-histo{
-    width: 100%;
-    margin: 1rem auto 0 auto ;
-    background-color: $c3;
-    .container{
-        font-family: 'Courier New', Courier, monospace;
-        color: $c1;
-        margin: auto;
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        gap: 6px 6px;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "article1"
-        "article2"
-        "aside"
-        "fotos";  
-        .article1{
-            h1{
-                padding-top: 2rem;
-                color: $c2
-            }
-            p{
-                margin: auto;
-                font-family: $font-f-Buda;
-                width: 100%;
-                height: 500px;
-                padding: 1rem;
-                grid-area: article1;
-                background-color:$bg-negro;
-                overflow-y: scroll; 
-                color: $c1;
-            }
-        }
-        .article2{
-            padding: 1rem;
-            grid-area: article2; 
-            background-color:$c4;
-            color:$c2;
-        }
-        .aside{
-            overflow: scroll;
-            margin-bottom: 2rem;
-            padding: 10px;
-            grid-area: aside; 
-            background-color: $bg-negro;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            .card{
-                background-color: $c4;
-                a{
-                    img{
-
-                    }
-                }
-                .card-body{
-                    .card-title{
-                        font-family: $font-f-Buda;
-                        color: $c2
-
-                    }
-                    .card-text{
-                        color: $c2;
-                    }
-                    a{
-                        background-color: $c2;
-                        border: $borde-claro;
-                        color: $c4;
-                    }
-                }
-            }
-        }
-        .fotos{
-            background-color: $bg-negro;
-            width: 100%;
-            margin: auto;
-            text-align: center;
-            .fotos_abajo{
-                width: 100%;
-                img{
-                    margin: auto;
-                    width: 100%;
-                    
-                    padding: 0.5rem;
-                }
-            }
-        }
-    }
     .floating-btn {
         position: fixed;
         bottom: 20px;
@@ -106,149 +15,187 @@
         &:hover{
             background-color: $c4;
             color: $c1;
-             }
-        }
-}
-@media screen and (min-width: 768px){
-    .container{
-        width: 60%;
-        display: grid; 
-        grid-template-columns: 3fr 1fr; 
-        grid-template-rows: 1fr 1fr 1fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          "article1 article1 article1 aside"
-          "article2 article2 article2 aside"
-          "fotos fotos fotos fotos"; 
-        .article1{
-            color: $texto-negro;
-            background-color: $c4;
-            grid-area: article1;
-            h1{
-                background-color: $c3;
-                
-            }
-            p{
-                color: yellow;
-                overflow-y: scroll;
-            }
-        }
-        .article2 {
-            grid-area: article2; 
-            background-color: $bg-negro;
-            border: $borde-oscuro;
-            color: white;
-            h1{
-                color: $c2;
-            }
-            p{
-                color: $texto-blanco;
-            }
-        }
-        .aside{
-            
-            height: 100%;
-            grid-area: aside;
-            background-color: $bg-negro;
-            display: flex;
-            flex-direction: row;
-
-            .card{
-               width: 49%;
-               max-width: 400px;
-               align-items: center;
-               a{
-                img{
-                    
-                }
-               }
-            }
-        }
-        .fotos {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            padding: 2rem;
-            grid-area: fotos; 
-            background-color: $bg-blanco;
-            color: $texto-negro;
-        }
-        .floating-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            padding: 5px 10px;
-            background-color: $c2;
-            color: $c4;
-            border-radius: 5px;
-            cursor: pointer;
-            z-index: 999;
-            &:hover{
-                background-color: $c4;
-                color: $c1;
-                }
         }
     }
-}
+    width: 100%;
+    margin: auto;
+    padding: 0;
 
-
-/* 
-
-    
-@media screen and (min-width: 1200px){
-    .main-historia{
     .container {
-    width: 100vw;
-    height: 100vh;
+    height: fit-content;
+    width: 100%;
+    height: 100%;
     display: grid;
-    overflow:inherit;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     gap: 6px 6px;
     grid-auto-flow: row;
     grid-template-areas:
-      "article1 article1 article1 article1 aside aside"
-      "article1 article1 article1 article1 aside aside"
-      "article1 article1 article1 article1 aside aside"
-      "article2 article2 article2 article2 aside aside"
-      "fotos fotos fotos fotos fotos fotos";  
-    .article1 {
-        
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 2rem;
-        grid-area: article1;
-        background-color: $bg-negro;
-        color: $texto-blanco;
-        border: $borde-claro;
-        overflow-y: scroll;         
-    }
-    .article2 {
-        padding: 2rem;
-        grid-area: article2; 
-        color: $texto-negro;
-        background-color:$bg-negro;
-        padding: 10px;
-    }
-    .aside {
-        width: 100%;
-        height: 100%;
-        grid-area: aside;
-        background-color: $bg-negro;
-        scrollbar-width: none;
-        .card{
-           width: fit-content;
-           align-items: center
+      "article1"
+      "article2"
+      "aside"
+      "fotos";
+        .article1 {
+            width: 100%;
+            height: 500px;
+            grid-area: article1;
+            overflow-y: scroll;
+            h1{
+                color:red;
+            }
+            p{
+                background-color: green;
+            }
+        }
+        .article2 {
+            
+            grid-area: article2;
+            h2{
+                color: pink;
+            }
+            p{
+                background-color: skyblue;
+            }
+        }
+        .aside {
+            padding: 0;
+            grid-area: aside;
+            margin-bottom: 0px;
+        }
+        .fotos {
+            text-align: center;
+            padding: 0;
+            grid-area: fotos;
+            .fotos_abajo{
+              img{
+                  width: 250px;
+                }
+            }
         }
     }
-    .fotos {
-        padding: 2rem;
-        grid-area: fotos; 
-        background-color: $bg-negro;
-        color: $texto-blanco;
-        border: $borde-oscuro;
-    }
 }
-}
-}
-/* HISTORIA*/
 
+@media screen and (min-width: 768px){
+.main-histo{
+    width: 100%;
+    height: auto;
+    .titular-historia{
+        color:white;
+        width: 100%;
+        text-align: center;
+        margin: 12rem auto;
+        font-family: $font-f-Buda;
+        font-size: 100px;
+        animation: rotateVertical 2s infinite;
+        @keyframes rotateVertical {
+            0% {
+                transform: rotateX(0deg);
+            }
+            50% {
+                transform: rotateX(360deg);
+            }
+            100% {
+                transform: rotateX(360deg);
+            }
+        }
+    }
+    .container {
+        height: auto;
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "article1 article1 aside"
+        "article2 article2 aside"
+        "fotos fotos fotos";
+        .article1{
+          grid-area: article1;
+          background-color: $c4;
+          height: auto;
+          overflow-y: hidden;
+          padding: 1rem;
+          .article1-h{
+            color: $c2;
+          }
+          p{
+            background-color: $c3;
+            color: $c1;
+            font-family: $font-f-Buda;
+          }
+          
+        }
+        .article2{
+          grid-area: article2;
+          background-color: $c2;
+          height: auto;
+          padding: 1rem;
+
+
+          .article2-h{
+            color: $c4;
+          }
+          p{
+            background-color: gray ;
+            color: $c4;
+            font-family: $font-f-Buda;
+            height: auto;
+          }
+        }
+        .aside{
+          grid-area: aside;
+          background-color: $c3;
+          height: auto;
+          width: 100%;
+          .scro{
+            width: 100%;
+            position: sticky;
+            top: 2vh;
+            height: auto;
+            margin: 0.5rem auto;
+            .card{
+                background-color: $c4;
+                margin: 5px auto;
+                width: 75%;
+                text-align: center;
+                padding: 1rem;
+                a{
+                }
+                img{
+                    max-width: 250px ;
+                }
+                .card-body{
+                    .card-title{
+                        font-size: small;
+                    }
+                    .card-text{
+                        font-size: small;
+                    }
+                }
+            }
+          }
+        }
+        .fotos{
+          grid-area: fotos;
+          background-color: $c2;
+          height: fit-content;
+          padding: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          .fotos_abajo{
+            
+            padding: 0.5rem;
+            
+            background-color: red;
+            img{
+                max-width: 100%;
+            }
+          }
+        }
+    }  
+}      
+}

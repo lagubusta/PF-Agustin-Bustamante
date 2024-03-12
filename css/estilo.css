@@ -573,9 +573,8 @@ p::-webkit-scrollbar-thumb{
   .main_miembros .titu_miembros {
     width: fit-content;
     margin: 1rem 0;
-    background-color: #F7CB84;
     font-size: 16px;
-    color: #1C0824;
+    color: #B0795C;
     font-family: "Courier New", Courier, monospace;
     text-align: left;
     justify-content: center;
@@ -653,82 +652,8 @@ p::-webkit-scrollbar-thumb{
 /* DECORACIÓN */
 .main-histo {
   width: 100%;
-  margin: 1rem auto 0 auto;
-  background-color: #230E2D;
-}
-.main-histo .container {
-  font-family: "Courier New", Courier, monospace;
-  color: #F7CB84;
   margin: auto;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  gap: 6px 6px;
-  grid-auto-flow: row;
-  grid-template-areas: "article1" "article2" "aside" "fotos";
-}
-.main-histo .container .article1 h1 {
-  padding-top: 2rem;
-  color: #B0795C;
-}
-.main-histo .container .article1 p {
-  margin: auto;
-  font-family: "Buda", serif;
-  width: 100%;
-  height: 500px;
-  padding: 1rem;
-  grid-area: article1;
-  background-color: #000000;
-  overflow-y: scroll;
-  color: #F7CB84;
-}
-.main-histo .container .article2 {
-  padding: 1rem;
-  grid-area: article2;
-  background-color: #1C0824;
-  color: #B0795C;
-}
-.main-histo .container .aside {
-  overflow: scroll;
-  margin-bottom: 2rem;
-  padding: 10px;
-  grid-area: aside;
-  background-color: #000000;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-.main-histo .container .aside .card {
-  background-color: #1C0824;
-}
-.main-histo .container .aside .card .card-body .card-title {
-  font-family: "Buda", serif;
-  color: #B0795C;
-}
-.main-histo .container .aside .card .card-body .card-text {
-  color: #B0795C;
-}
-.main-histo .container .aside .card .card-body a {
-  background-color: #B0795C;
-  border: 1px solid #F7CB84;
-  color: #1C0824;
-}
-.main-histo .container .fotos {
-  background-color: #000000;
-  width: 100%;
-  margin: auto;
-  text-align: center;
-}
-.main-histo .container .fotos .fotos_abajo {
-  width: 100%;
-}
-.main-histo .container .fotos .fotos_abajo img {
-  margin: auto;
-  width: 100%;
-  padding: 0.5rem;
+  padding: 0;
 }
 .main-histo .floating-btn {
   position: fixed;
@@ -745,136 +670,163 @@ p::-webkit-scrollbar-thumb{
   background-color: #1C0824;
   color: #F7CB84;
 }
+.main-histo .container {
+  height: fit-content;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 6px 6px;
+  grid-auto-flow: row;
+  grid-template-areas: "article1" "article2" "aside" "fotos";
+}
+.main-histo .container .article1 {
+  width: 100%;
+  height: 500px;
+  grid-area: article1;
+  overflow-y: scroll;
+}
+.main-histo .container .article1 h1 {
+  color: red;
+}
+.main-histo .container .article1 p {
+  background-color: green;
+}
+.main-histo .container .article2 {
+  grid-area: article2;
+}
+.main-histo .container .article2 h2 {
+  color: pink;
+}
+.main-histo .container .article2 p {
+  background-color: skyblue;
+}
+.main-histo .container .aside {
+  padding: 0;
+  grid-area: aside;
+  margin-bottom: 0px;
+}
+.main-histo .container .fotos {
+  text-align: center;
+  padding: 0;
+  grid-area: fotos;
+}
+.main-histo .container .fotos .fotos_abajo img {
+  width: 250px;
+}
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 60%;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas: "article1 article1 article1 aside" "article2 article2 article2 aside" "fotos fotos fotos fotos";
+  .main-histo {
+    width: 100%;
+    height: auto;
   }
-  .container .article1 {
-    color: #000000;
-    background-color: #1C0824;
-    grid-area: article1;
-  }
-  .container .article1 h1 {
-    background-color: #230E2D;
-  }
-  .container .article1 p {
-    color: yellow;
-    overflow-y: scroll;
-  }
-  .container .article2 {
-    grid-area: article2;
-    background-color: #000000;
-    border: 1px solid #1C0824;
+  .main-histo .titular-historia {
     color: white;
+    width: 100%;
+    text-align: center;
+    margin: 12rem auto;
+    font-family: "Buda", serif;
+    font-size: 100px;
+    animation: rotateVertical 2s infinite;
   }
-  .container .article2 h1 {
+  @keyframes rotateVertical {
+    0% {
+      transform: rotateX(0deg);
+    }
+    50% {
+      transform: rotateX(360deg);
+    }
+    100% {
+      transform: rotateX(360deg);
+    }
+  }
+  .main-histo .container {
+    height: auto;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    grid-auto-flow: row;
+    grid-template-areas: "article1 article1 aside" "article2 article2 aside" "fotos fotos fotos";
+  }
+  .main-histo .container .article1 {
+    grid-area: article1;
+    background-color: #1C0824;
+    height: auto;
+    overflow-y: hidden;
+    padding: 1rem;
+  }
+  .main-histo .container .article1 .article1-h {
     color: #B0795C;
   }
-  .container .article2 p {
-    color: white;
+  .main-histo .container .article1 p {
+    background-color: #230E2D;
+    color: #F7CB84;
+    font-family: "Buda", serif;
   }
-  .container .aside {
-    height: 100%;
+  .main-histo .container .article2 {
+    grid-area: article2;
+    background-color: #B0795C;
+    height: auto;
+    padding: 1rem;
+  }
+  .main-histo .container .article2 .article2-h {
+    color: #1C0824;
+  }
+  .main-histo .container .article2 p {
+    background-color: gray;
+    color: #1C0824;
+    font-family: "Buda", serif;
+    height: auto;
+  }
+  .main-histo .container .aside {
     grid-area: aside;
-    background-color: #000000;
-    display: flex;
-    flex-direction: row;
+    background-color: #230E2D;
+    height: auto;
+    width: 100%;
   }
-  .container .aside .card {
-    width: 49%;
-    max-width: 400px;
+  .main-histo .container .aside .scro {
+    width: 100%;
+    position: sticky;
+    top: 2vh;
+    height: auto;
+    margin: 0.5rem auto;
+  }
+  .main-histo .container .aside .scro .card {
+    background-color: #1C0824;
+    margin: 5px auto;
+    width: 75%;
+    text-align: center;
+    padding: 1rem;
+  }
+  .main-histo .container .aside .scro .card img {
+    max-width: 250px;
+  }
+  .main-histo .container .aside .scro .card .card-body .card-title {
+    font-size: small;
+  }
+  .main-histo .container .aside .scro .card .card-body .card-text {
+    font-size: small;
+  }
+  .main-histo .container .fotos {
+    grid-area: fotos;
+    background-color: #B0795C;
+    height: fit-content;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
-  .container .fotos {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 2rem;
-    grid-area: fotos;
-    background-color: white;
-    color: #000000;
+  .main-histo .container .fotos .fotos_abajo {
+    padding: 0.5rem;
+    background-color: red;
   }
-  .container .floating-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 5px 10px;
-    background-color: #B0795C;
-    color: #1C0824;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 999;
-  }
-  .container .floating-btn:hover {
-    background-color: #1C0824;
-    color: #F7CB84;
+  .main-histo .container .fotos .fotos_abajo img {
+    max-width: 100%;
   }
 }
-/* 
-
-
-@media screen and (min-width: 1200px){
-    .main-historia{
-    .container {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    overflow:inherit;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 6px 6px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "article1 article1 article1 article1 aside aside"
-      "article1 article1 article1 article1 aside aside"
-      "article1 article1 article1 article1 aside aside"
-      "article2 article2 article2 article2 aside aside"
-      "fotos fotos fotos fotos fotos fotos";  
-    .article1 {
-
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 2rem;
-        grid-area: article1;
-        background-color: $bg-negro;
-        color: $texto-blanco;
-        border: $borde-claro;
-        overflow-y: scroll;         
-    }
-    .article2 {
-        padding: 2rem;
-        grid-area: article2; 
-        color: $texto-negro;
-        background-color:$bg-negro;
-        padding: 10px;
-    }
-    .aside {
-        width: 100%;
-        height: 100%;
-        grid-area: aside;
-        background-color: $bg-negro;
-        scrollbar-width: none;
-        .card{
-           width: fit-content;
-           align-items: center
-        }
-    }
-    .fotos {
-        padding: 2rem;
-        grid-area: fotos; 
-        background-color: $bg-negro;
-        color: $texto-blanco;
-        border: $borde-oscuro;
-    }
-}
-}
-}
-/* HISTORIA*/
 /* COLORES BASE */
 /* COLORES BASE */
 /* TEXTOS */
