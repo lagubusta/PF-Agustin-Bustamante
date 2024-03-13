@@ -670,6 +670,26 @@ p::-webkit-scrollbar-thumb{
   background-color: #1C0824;
   color: #F7CB84;
 }
+.main-histo .titular-historia {
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin: 11rem auto;
+  font-family: "Buda", serif;
+  font-size: 40px;
+  animation: rotateVertical 2s infinite;
+}
+@keyframes rotateVertical {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
 .main-histo .container {
   height: fit-content;
   width: 100%;
@@ -687,35 +707,67 @@ p::-webkit-scrollbar-thumb{
   grid-area: article1;
   overflow-y: scroll;
 }
-.main-histo .container .article1 h1 {
-  color: red;
+.main-histo .container .article1 .article1-h {
+  width: 100%;
+  color: #F7CB84;
+  font-size: 2em;
+  font-family: "Courier New", Courier, monospace;
 }
 .main-histo .container .article1 p {
-  background-color: green;
+  color: #B0795C;
 }
 .main-histo .container .article2 {
-  grid-area: article2;
+  margin-top: 2rem;
+  background-color: #1C0824;
+  padding: 1rem;
 }
-.main-histo .container .article2 h2 {
-  color: pink;
+.main-histo .container .article2 .article2-h {
+  width: 100%;
+  color: #F7CB84;
+  font-size: 2em;
+  font-family: "Courier New", Courier, monospace;
+  text-align: right;
 }
 .main-histo .container .article2 p {
-  background-color: skyblue;
+  color: #B0795C;
+  padding-top: 0.5rem;
 }
 .main-histo .container .aside {
-  padding: 0;
   grid-area: aside;
-  margin-bottom: 0px;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+}
+.main-histo .container .aside .scro {
+  margin: 1rem;
+}
+.main-histo .container .aside .scro .card {
+  margin: 1rem auto;
+  background-color: #F7CB84;
+}
+.main-histo .container .aside .scro .card .card-body .card-title {
+  color: #1C0824;
+  font-size: small;
+}
+.main-histo .container .aside .scro .card .card-body .card-text {
+  color: #B0795C;
+  font-size: small;
 }
 .main-histo .container .fotos {
+  width: 100%;
+  background-color: #1C0824;
   text-align: center;
-  padding: 0;
+  padding: 0.5rem;
   grid-area: fotos;
+  margin: 0 auto 1.5rem auto;
 }
 .main-histo .container .fotos .fotos_abajo img {
   width: 250px;
+  border: 1px solid #F7CB84;
+  margin: 0.2rem auto;
 }
 
+/*------------------------------------------------------------- */
 @media screen and (min-width: 768px) {
   .main-histo {
     width: 100%;
@@ -746,7 +798,7 @@ p::-webkit-scrollbar-thumb{
     margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr 0.3fr;
     gap: 1rem;
     grid-auto-flow: row;
     grid-template-areas: "article1 article1 aside" "article2 article2 aside" "fotos fotos fotos";
@@ -760,6 +812,8 @@ p::-webkit-scrollbar-thumb{
   }
   .main-histo .container .article1 .article1-h {
     color: #B0795C;
+    font-size: 28px;
+    font-family: "Courier New", Courier, monospace;
   }
   .main-histo .container .article1 p {
     background-color: #230E2D;
@@ -768,16 +822,18 @@ p::-webkit-scrollbar-thumb{
   }
   .main-histo .container .article2 {
     grid-area: article2;
-    background-color: #B0795C;
+    background-color: #1C0824;
     height: auto;
     padding: 1rem;
   }
   .main-histo .container .article2 .article2-h {
-    color: #1C0824;
+    color: #F7CB84;
+    font-size: 28px;
+    font-family: "Courier New", Courier, monospace;
   }
   .main-histo .container .article2 p {
-    background-color: gray;
-    color: #1C0824;
+    background-color: #1C0824;
+    color: #B0795C;
     font-family: "Buda", serif;
     height: auto;
   }
@@ -795,36 +851,40 @@ p::-webkit-scrollbar-thumb{
     margin: 0.5rem auto;
   }
   .main-histo .container .aside .scro .card {
-    background-color: #1C0824;
+    background-color: #1C0824; /* c4*/
     margin: 5px auto;
-    width: 75%;
+    width: 95%;
+    max-height: 270px;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .main-histo .container .aside .scro .card img {
     max-width: 250px;
+    min-width: 250px;
   }
   .main-histo .container .aside .scro .card .card-body .card-title {
     font-size: small;
+    color: #F7CB84;
   }
   .main-histo .container .aside .scro .card .card-body .card-text {
     font-size: small;
+    color: #F7CB84;
   }
   .main-histo .container .fotos {
     grid-area: fotos;
-    background-color: #B0795C;
+    background-color: #1C0824;
     height: fit-content;
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
   .main-histo .container .fotos .fotos_abajo {
     padding: 0.5rem;
-    background-color: red;
   }
   .main-histo .container .fotos .fotos_abajo img {
     max-width: 100%;
+    min-width: 300px;
   }
 }
 /* COLORES BASE */

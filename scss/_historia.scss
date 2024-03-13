@@ -17,6 +17,26 @@
             color: $c1;
         }
     }
+    .titular-historia{
+        color:white;
+        width: 100%;
+        text-align: center;
+        margin: 11rem auto;
+        font-family: $font-f-Buda;
+        font-size: 40px;
+        animation: rotateVertical 2s infinite;
+        @keyframes rotateVertical {
+            0% {
+                transform: rotateX(0deg);
+            }
+            50% {
+                transform: rotateX(360deg);
+            }
+            100% {
+                transform: rotateX(360deg);
+            }
+        }              
+    }
     width: 100%;
     margin: auto;
     padding: 0;
@@ -40,40 +60,78 @@
             height: 500px;
             grid-area: article1;
             overflow-y: scroll;
-            h1{
-                color:red;
+            .article1-h{
+                width: 100%;
+                color: $c1;
+                font-size: 2em;
+                font-family: 'Courier New', Courier, monospace;
             }
             p{
-                background-color: green;
+                color: $c2;
             }
         }
         .article2 {
-            
-            grid-area: article2;
-            h2{
-                color: pink;
+            margin-top: 2rem;
+            background-color: $c4;
+            padding: 1rem;
+            .article2-h{
+                width: 100%;
+                color: $c1;
+                font-size: 2em;
+                font-family: 'Courier New', Courier, monospace;
+                text-align: right;
             }
             p{
-                background-color: skyblue;
+                color:$c2;
+                padding-top: 0.5rem;
             }
         }
         .aside {
-            padding: 0;
             grid-area: aside;
-            margin-bottom: 0px;
+            width: 100%;
+            margin: 1rem auto;
+            padding: 0.5rem;
+            .scro{
+                margin: 1rem;
+                .card{
+                    margin: 1rem auto;
+                    background-color: $c1;
+                    a{
+                    }
+                    img{
+                    }
+                    .card-body{
+                        .card-title{
+                            color: $c4;
+                            font-size: small;
+                        }
+                        .card-text{
+                            color: $c2;
+                            font-size: small;
+                        }
+                    }
+                }
+            }
         }
         .fotos {
+            width: 100%;
+            background-color: $c4;
             text-align: center;
-            padding: 0;
+            padding: 0.5rem;
             grid-area: fotos;
+            margin: 0 auto 1.5rem auto;
             .fotos_abajo{
               img{
                   width: 250px;
+                  border: $borde-claro;
+                  margin: 0.2rem auto;
                 }
             }
         }
     }
 }
+
+/*------------------------------------------------------------- */
 
 @media screen and (min-width: 768px){
 .main-histo{
@@ -104,7 +162,7 @@
         margin-top: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr .7fr .3fr;
         gap: 1rem;
         grid-auto-flow: row;
         grid-template-areas:
@@ -119,6 +177,8 @@
           padding: 1rem;
           .article1-h{
             color: $c2;
+            font-size: 28px;
+            font-family: 'Courier New', Courier, monospace;
           }
           p{
             background-color: $c3;
@@ -129,17 +189,19 @@
         }
         .article2{
           grid-area: article2;
-          background-color: $c2;
+          background-color: $c4;
           height: auto;
           padding: 1rem;
 
 
           .article2-h{
-            color: $c4;
+            color: $c1;
+            font-size: 28px;
+            font-family: 'Courier New', Courier, monospace;
           }
           p{
-            background-color: gray ;
-            color: $c4;
+            background-color: $c4 ;
+            color: $c2;
             font-family: $font-f-Buda;
             height: auto;
           }
@@ -156,22 +218,26 @@
             height: auto;
             margin: 0.5rem auto;
             .card{
-                background-color: $c4;
+                background-color: $c4;/* c4*/
                 margin: 5px auto;
-                width: 75%;
+                width: 95%;
+                max-height: 270px;
                 text-align: center;
-                padding: 1rem;
+                padding: 0.5rem;
                 a{
                 }
                 img{
-                    max-width: 250px ;
+                    max-width: 250px;
+                    min-width: 250px;
                 }
                 .card-body{
                     .card-title{
                         font-size: small;
+                        color: $c1;
                     }
                     .card-text{
                         font-size: small;
+                        color: $c1;
                     }
                 }
             }
@@ -179,20 +245,17 @@
         }
         .fotos{
           grid-area: fotos;
-          background-color: $c2;
+          background-color: $c4;
           height: fit-content;
-          padding: 1rem;
+          padding: 0.5rem;
           display: flex;
-          justify-content: center;
+          justify-content: space-around;
           align-items: center;
-          
           .fotos_abajo{
-            
             padding: 0.5rem;
-            
-            background-color: red;
             img{
                 max-width: 100%;
+                min-width: 300px ;
             }
           }
         }
