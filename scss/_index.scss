@@ -1,8 +1,11 @@
 @import "var";
+@import "mixins";
+
+
+
 
 .main-index{
-    width: 100%;
-    margin: auto;
+    @include full-width;
     .div-foto-1-index{
         padding: 1rem;
         background-color: $bg-negro;
@@ -29,16 +32,14 @@
         }
         .texto-50-aniver{
             background-color: $c3;
-            .titulo-texto-50-aniver{
+            .titulo-texto-50-aniver {
                 padding: 1rem;
                 margin: 1rem auto;
-                color: $c2;
-                font-family: $font-f-CNew;
+                @include text-styles;
                 text-align: center;
                 padding: 0.5rem 0;
                 background-color: $c4;
                 width: 90%;
-                
             }
             .p50ani{
                 padding: 0 10px;
@@ -54,29 +55,23 @@
         background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
         border-radius: 10px;
         width: 95%;
-        .titulo-imag-index{
-            font-family: $font-f-CNew;
+        .titulo-imag-index {
+            @include text-styles;
             font-size: 2em;
-            color: $c2;
             padding: 1rem 0 0 0;
             text-align: center;
         }
+
         .imagenes{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             img{
-                border: $borde-oscuro;
-                border: solid 3px;
-                width: 90%;
-                object-fit: cover;
-                margin: 0.5rem 0;
-                max-width: 768px;
+                @include image-styles;
             }
         }
     }
-
 }
 @media screen and (min-width: 768px){
     .main-index{
@@ -144,25 +139,3 @@
         }
     }
 }  
-
-
-/*
-@media screen and (min-width: 768px){
-    }    
-p::-webkit-scrollbar {
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    width: 10px;
-    background-color: $salmon;
-}
-p::-webkit-scrollbar-thumb{
-    background-color: $bordo;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
-
-*/

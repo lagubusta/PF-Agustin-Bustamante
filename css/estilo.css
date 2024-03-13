@@ -121,6 +121,7 @@ footer .ul_footer .ul_footer_li a img {
 /* BORDES */
 /* DECORACIÓN */
 /* DECORACIÓN */
+/*mixin index*/
 .main-index {
   width: 100%;
   margin: auto;
@@ -175,9 +176,9 @@ footer .ul_footer .ul_footer_li a img {
   width: 95%;
 }
 .main-index .imag-index .titulo-imag-index {
+  color: #B0795C;
   font-family: "Courier New", Courier, monospace;
   font-size: 2em;
-  color: #B0795C;
   padding: 1rem 0 0 0;
   text-align: center;
 }
@@ -260,26 +261,6 @@ footer .ul_footer .ul_footer_li a img {
     height: 200px;
   }
 }
-/*
-@media screen and (min-width: 768px){
-    }    
-p::-webkit-scrollbar {
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    width: 10px;
-    background-color: $salmon;
-}
-p::-webkit-scrollbar-thumb{
-    background-color: $bordo;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
-
-*/
 /* COLORES BASE */
 /* COLORES BASE */
 /* TEXTOS */
@@ -561,15 +542,17 @@ p::-webkit-scrollbar-thumb{
     padding: 1rem;
     margin: 0.5rem auto;
     background-color: #1C0824;
+    overflow: hidden;
   }
   .main_miembros .todas_cards .card:hover {
     background-color: #F7CB84;
   }
   .main_miembros .todas_cards .card img {
-    max-width: 300px;
+    max-width: 250px;
     min-width: 150px;
     height: 300px;
     background-size: cover;
+    object-fit: cover;
   }
   .main_miembros .todas_cards .card .card-body {
     background-color: #230E2D;
@@ -623,7 +606,7 @@ p::-webkit-scrollbar-thumb{
 }
 .main-histo .floating-btn {
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
   padding: 5px 10px;
   background-color: #B0795C;
@@ -631,6 +614,10 @@ p::-webkit-scrollbar-thumb{
   border-radius: 5px;
   cursor: pointer;
   z-index: 999;
+}
+.main-histo .floating-btn:hover {
+  background-color: #1C0824;
+  color: #F7CB84;
 }
 .main-histo .floating-btn:hover {
   background-color: #1C0824;
@@ -849,6 +836,7 @@ p::-webkit-scrollbar-thumb{
   }
   .main-histo .container .fotos .fotos_abajo {
     padding: 0.5rem;
+    width: 250px;
   }
   .main-histo .container .fotos .fotos_abajo img {
     max-width: 100%;

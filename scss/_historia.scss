@@ -1,17 +1,28 @@
 @import "var";
 
+@mixin button-styles {
+    padding: 5px 10px;
+    background-color: $c2;
+    color: $c4;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+
+    &:hover {
+        background-color: $c4;
+        color: $c1;
+    }
+}
+
+
+
 
 .main-histo{
-    .floating-btn {
+    .floating-btn{
         position: fixed;
-        bottom: 20px;
+        bottom: 50px;
         right: 20px;
-        padding: 5px 10px;
-        background-color: $c2;
-        color: $c4;
-        border-radius: 5px;
-        cursor: pointer;
-        z-index: 999;
+        @include button-styles;
         &:hover{
             background-color: $c4;
             color: $c1;
@@ -255,12 +266,16 @@
           align-items: center;
           .fotos_abajo{
             padding: 0.5rem;
+            width: 250px;
             img{
                 max-width: 100%;
-                min-width: 300px ;
+                min-width: 300px;
             }
           }
         }
     }  
 }      
 }
+
+
+
