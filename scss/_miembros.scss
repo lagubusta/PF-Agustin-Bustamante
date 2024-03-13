@@ -8,8 +8,8 @@
     width: 80%;
     margin: 1rem auto 0 auto;
     background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
-    font-size: 16px;
-    color: $c2;
+    font-size: x-large;
+    color: $c1;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     justify-content: center;
@@ -97,11 +97,11 @@
     margin: auto;
     .titu_miembros{
       width: fit-content;
-      margin: 1rem 0;
-      font-size: 16px;
-      color: $c2;
+      margin: 6rem auto 1rem auto;
+      font-size: xx-large;
+      color: $c1;
       font-family: 'Courier New', Courier, monospace;
-      text-align: left;
+      text-align: center;
       justify-content: center;
       padding: 1rem;
     }

@@ -291,6 +291,14 @@ p::-webkit-scrollbar-thumb{
 .main_discos {
   width: 100%;
 }
+.main_discos .titular-discos {
+  color: #F7CB84;
+  text-align: center;
+  margin-top: 3rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: x-large;
+  background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
+}
 .main_discos .div_cuadrado_discos {
   background-color: #1C0824;
   width: 95%;
@@ -354,6 +362,14 @@ p::-webkit-scrollbar-thumb{
     margin: auto;
     width: 75%;
     max-width: 1200px;
+  }
+  .main_discos .titular-discos {
+    color: #F7CB84;
+    text-align: center;
+    margin-top: 6rem;
+    font-family: "Courier New", Courier, monospace;
+    font-size: xx-large;
+    background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
   }
   .main_discos .div_cuadrado_discos {
     background-color: #1C0824;
@@ -424,56 +440,6 @@ p::-webkit-scrollbar-thumb{
     color: #F7CB84;
   }
 }
-/* 
-.main_discos{
-    width: 100%;
-    border: solid red 3px;
-    background-color: $c4;
-    .div_cuadrado_discos{
-
-        padding: 1rem;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: center;
-        .main_discos_div{
-              border: $borde-claro;
-              a{
-              .img_discos{
-                width: 60px;
-              }
-            }
-        }
-    }
-    .acor-discos{
-        width: 100%;
-    }
-}
-@media screen and (min-width: 768px){
-    .main_discos{
-        background-color: $c4;
-        .div_cuadrado_discos{
-            padding: 1rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-            border-top: $borde-claro;
-            border-bottom: double white 3px;
-            .main_discos_div{
-                  border:$borde-claro;
-                  a{
-                  .img_discos{
-                    width: 150px;
-                  }
-                }
-            }
-        }
-    }
-}
-
-
-*/
 /* COLORES BASE */
 /* COLORES BASE */
 /* TEXTOS */
@@ -490,8 +456,8 @@ p::-webkit-scrollbar-thumb{
   width: 80%;
   margin: 1rem auto 0 auto;
   background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
-  font-size: 16px;
-  color: #B0795C;
+  font-size: x-large;
+  color: #F7CB84;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   justify-content: center;
@@ -572,11 +538,11 @@ p::-webkit-scrollbar-thumb{
   }
   .main_miembros .titu_miembros {
     width: fit-content;
-    margin: 1rem 0;
-    font-size: 16px;
-    color: #B0795C;
+    margin: 6rem auto 1rem auto;
+    font-size: xx-large;
+    color: #F7CB84;
     font-family: "Courier New", Courier, monospace;
-    text-align: left;
+    text-align: center;
     justify-content: center;
     padding: 1rem;
   }
