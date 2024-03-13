@@ -2,11 +2,8 @@
 
 .main_contacto{
     h1{
-        width: 100%;
-        color: $c2;
-        text-align: center;
-        padding: 1rem;
-        font-family: $font-f-Buda;
+        @include titulos-miembros;
+        font-size: 36px;
     }
     margin: 1rem;
     background-color: $c4;

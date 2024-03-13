@@ -52,22 +52,32 @@
     padding: 1rem 0.5rem;
     background-color: $bg-negro;
     .titu_segunda{
-      width: 100%;
-      font-family: $font-f-CNew;
-      color: $c2;
-      text-align: center;
-      background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
+      @include titulos-miembros;
     }
-    .art_artista{
+    .art_artista_izq{
       width: 100%;
       background-color: $c4;
       padding: 15px;      
-      .nomb_artista{
+      .nomb_artista_izq{
         color: $c1;
         font-family: $font-f-CNew;
       }
       p{
         color: $c1;
+        font-family: $font-f-Buda;
+      }
+    }
+    .art_artista_der{
+      width: 100%;
+      background-color: $c3;
+      padding: 15px;      
+      .nomb_artista_der{
+        text-align: right;
+        color: $c2;
+        font-family: $font-f-CNew;
+      }
+      p{
+        color: $c2;
         font-family: $font-f-Buda;
       }
     }
@@ -119,12 +129,7 @@
         padding: 1rem;
         margin: 0.5rem auto;
         background-color: $c4;
-
-
-
         overflow: hidden; 
-
-
         &:hover{
           background-color: $c1;
         }
@@ -156,9 +161,16 @@
       margin: 3rem auto;
       width: 100%;
       padding: 1rem;
-      background-color: $c1;
+      background-color: $c3;
       .titu_segunda{
-        font-family: $font-f-osw;
+        width: fit-content;
+        margin: 1rem auto;
+        font-size: xx-large;
+        color: $c1;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        justify-content: center;
+        padding: 1rem;
       }
     }
     .floating-btn {

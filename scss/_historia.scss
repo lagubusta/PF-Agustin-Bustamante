@@ -73,10 +73,11 @@
             grid-area: article1;
             overflow-y: scroll;
             .article1-h{
+                @include titulos-miembros;
+                text-align: left;
                 width: 100%;
                 color: $c1;
-                font-size: 2em;
-                font-family: 'Courier New', Courier, monospace;
+                padding: 1rem;
             }
             p{
                 color: $c2;
@@ -87,10 +88,10 @@
             background-color: $c4;
             padding: 1rem;
             .article2-h{
+                @include titulos-miembros;
                 width: 100%;
                 color: $c1;
-                font-size: 2em;
-                font-family: 'Courier New', Courier, monospace;
+                padding: 1rem;
                 text-align: right;
             }
             p{

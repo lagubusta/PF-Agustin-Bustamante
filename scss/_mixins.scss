@@ -16,3 +16,19 @@
     margin: 0.5rem 0;
     max-width: 768px;
 }
+/*mixin index*/
+
+/* miembros*/
+@mixin titulos-miembros {
+    width: 80%;
+    margin: 1rem auto 0 auto;
+    background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
+    font-size: x-large;
+    color: $c1;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+}
+
+/* miembros*/

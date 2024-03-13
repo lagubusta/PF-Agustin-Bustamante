@@ -122,6 +122,9 @@ footer .ul_footer .ul_footer_li a img {
 /* DECORACIÓN */
 /* DECORACIÓN */
 /*mixin index*/
+/*mixin index*/
+/* miembros*/
+/* miembros*/
 .main-index {
   width: 100%;
   margin: auto;
@@ -273,12 +276,15 @@ footer .ul_footer .ul_footer_li a img {
   width: 100%;
 }
 .main_discos .titular-discos {
-  color: #F7CB84;
-  text-align: center;
-  margin-top: 3rem;
-  font-family: "Courier New", Courier, monospace;
-  font-size: x-large;
+  width: 80%;
+  margin: 1rem auto 0 auto;
   background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
+  font-size: x-large;
+  color: #F7CB84;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
 }
 .main_discos .div_cuadrado_discos {
   background-color: #1C0824;
@@ -477,23 +483,41 @@ footer .ul_footer .ul_footer_li a img {
   background-color: #000000;
 }
 .main_miembros .segunda .titu_segunda {
-  width: 100%;
-  font-family: "Courier New", Courier, monospace;
-  color: #B0795C;
-  text-align: center;
+  width: 80%;
+  margin: 1rem auto 0 auto;
   background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
+  font-size: x-large;
+  color: #F7CB84;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
 }
-.main_miembros .segunda .art_artista {
+.main_miembros .segunda .art_artista_izq {
   width: 100%;
   background-color: #1C0824;
   padding: 15px;
 }
-.main_miembros .segunda .art_artista .nomb_artista {
+.main_miembros .segunda .art_artista_izq .nomb_artista_izq {
   color: #F7CB84;
   font-family: "Courier New", Courier, monospace;
 }
-.main_miembros .segunda .art_artista p {
+.main_miembros .segunda .art_artista_izq p {
   color: #F7CB84;
+  font-family: "Buda", serif;
+}
+.main_miembros .segunda .art_artista_der {
+  width: 100%;
+  background-color: #230E2D;
+  padding: 15px;
+}
+.main_miembros .segunda .art_artista_der .nomb_artista_der {
+  text-align: right;
+  color: #B0795C;
+  font-family: "Courier New", Courier, monospace;
+}
+.main_miembros .segunda .art_artista_der p {
+  color: #B0795C;
   font-family: "Buda", serif;
 }
 .main_miembros .floating-btn {
@@ -570,10 +594,17 @@ footer .ul_footer .ul_footer_li a img {
     margin: 3rem auto;
     width: 100%;
     padding: 1rem;
-    background-color: #F7CB84;
+    background-color: #230E2D;
   }
   .main_miembros .segunda .titu_segunda {
-    font-family: "Oswald", sans-serif;
+    width: fit-content;
+    margin: 1rem auto;
+    font-size: xx-large;
+    color: #F7CB84;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
   }
   .main_miembros .floating-btn {
     position: fixed;
@@ -662,10 +693,19 @@ footer .ul_footer .ul_footer_li a img {
   overflow-y: scroll;
 }
 .main-histo .container .article1 .article1-h {
+  width: 80%;
+  margin: 1rem auto 0 auto;
+  background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
+  font-size: x-large;
+  color: #F7CB84;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
+  text-align: left;
   width: 100%;
   color: #F7CB84;
-  font-size: 2em;
-  font-family: "Courier New", Courier, monospace;
+  padding: 1rem;
 }
 .main-histo .container .article1 p {
   color: #B0795C;
@@ -676,10 +716,18 @@ footer .ul_footer .ul_footer_li a img {
   padding: 1rem;
 }
 .main-histo .container .article2 .article2-h {
+  width: 80%;
+  margin: 1rem auto 0 auto;
+  background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
+  font-size: x-large;
+  color: #F7CB84;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
   width: 100%;
   color: #F7CB84;
-  font-size: 2em;
-  font-family: "Courier New", Courier, monospace;
+  padding: 1rem;
   text-align: right;
 }
 .main-histo .container .article2 p {
@@ -862,11 +910,16 @@ footer .ul_footer .ul_footer_li a img {
   align-items: center;
 }
 .main_contacto h1 {
-  width: 100%;
-  color: #B0795C;
+  width: 80%;
+  margin: 1rem auto 0 auto;
+  background-image: linear-gradient(to right, transparent 0%, rgb(66, 16, 56) 50%, transparent 100%);
+  font-size: x-large;
+  color: #F7CB84;
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
-  padding: 1rem;
-  font-family: "Buda", serif;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
+  font-size: 36px;
 }
 .main_contacto .form_contacto {
   width: 100%;
@@ -955,5 +1008,9 @@ footer .ul_footer .ul_footer_li a img {
     height: 400px;
   }
 }
+/*mixin index*/
+/*mixin index*/
+/* miembros*/
+/* miembros*/
 
 /*# sourceMappingURL=estilo.css.map */
