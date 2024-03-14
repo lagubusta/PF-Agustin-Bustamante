@@ -300,6 +300,10 @@ footer .ul_footer .ul_footer_li a img {
 .main_discos .div_cuadrado_discos .main_discos_div {
   border: 1px solid #F7CB84;
 }
+.main_discos .div_cuadrado_discos .main_discos_div a img {
+  max-width: 100px;
+  object-fit: cover;
+}
 .main_discos .acor-discos {
   border: white;
   width: 95%;
@@ -371,10 +375,15 @@ footer .ul_footer .ul_footer_li a img {
   }
   .main_discos .div_cuadrado_discos .main_discos_div {
     border: 1px solid #F7CB84;
+    max-width: 100px;
+    min-width: 150px;
+    max-height: 150px;
+    min-height: 100px;
+    overflow: hidden;
   }
   .main_discos .div_cuadrado_discos .main_discos_div a img {
     min-width: 150px;
-    max-width: 200px;
+    object-fit: cover;
   }
   .main_discos .acor-discos {
     border: white;
@@ -392,6 +401,7 @@ footer .ul_footer .ul_footer_li a img {
   .main_discos .acor-discos .accordion .accordion-item h2 button {
     color: white;
     background-color: #1C0824;
+    font-family: "Courier New", Courier, monospace;
   }
   .main_discos .acor-discos .accordion .accordion-item h2 button:hover {
     background-color: #B0795C;
@@ -409,7 +419,7 @@ footer .ul_footer .ul_footer_li a img {
   .main_discos .acor-discos .accordion .accordion-item div .accordion-body .p-3 {
     width: 100%;
     color: white;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Buda", serif;
   }
   .floating-btn {
     position: fixed;

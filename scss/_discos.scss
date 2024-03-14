@@ -21,9 +21,12 @@
         justify-content: center;
         .main_discos_div{
             border: $borde-claro;
+            
             a{
+                 
                 img{
-
+                    max-width: 100px;
+                    object-fit: cover;
                 }
             }
         }
@@ -107,12 +110,17 @@
             justify-content: center;
             .main_discos_div{
                 border: $borde-claro;
-                ;
+                max-width: 100px;
+                min-width: 150px;
+                max-height: 150px;
+                min-height: 100px;
+                overflow: hidden; 
                 a{
                     img{
                     min-width: 150px;
-                    max-width: 200px;
+                    object-fit: cover;
                     }
+                    
                     
                 }
             }
@@ -132,6 +140,7 @@
                         button{
                             color: $texto-blanco;
                             background-color: $c4;
+                            font-family: $font-f-CNew;
                             &:hover{
                                 background-color: $c2;
                                 color: $c4;
@@ -151,7 +160,7 @@
                             .p-3{
                                 width: 100%;
                                 color: $texto-blanco;
-                                font-family: $font-f-CNew;
+                                font-family: $font-f-Buda;
                                 }
                         }
                     }
