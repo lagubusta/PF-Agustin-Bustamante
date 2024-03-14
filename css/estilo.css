@@ -572,11 +572,12 @@ footer .ul_footer .ul_footer_li a img {
     background-color: #F7CB84;
   }
   .main_miembros .todas_cards .card img {
-    max-width: 250px;
+    max-width: 100%;
     min-width: 150px;
     height: 300px;
     background-size: cover;
     object-fit: cover;
+    margin: auto;
   }
   .main_miembros .todas_cards .card .card-body {
     background-color: #230E2D;
