@@ -132,6 +132,7 @@
         overflow: hidden; 
         &:hover{
           background-color: $c1;
+          animation: heartbeat infinite $duration;
         }
         img{
           max-width: 100%;
